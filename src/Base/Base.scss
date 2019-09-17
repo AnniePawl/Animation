@@ -1,0 +1,27 @@
+@mixin circle_position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin circles {
+  backgound-color:#16688B; 
+  height:200px;
+  width:200px;
+  border-radius:50%;
+  tranform: 50px;
+}
+
+.base_rectangle {
+  background-color:#F8E166;
+  width:100%;
+  height:250px
+}
+
+.circles {
+@include circle_position()
+}
+
+.circle1, .circle2, .circle3 {
+@include circles()
+}
